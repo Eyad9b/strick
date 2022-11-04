@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<!-- Googel Font -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.css" integrity="sha512-72McA95q/YhjwmWFMGe8RI3aZIMCTJWPBbV8iQY3jy1z9+bi6+jHnERuNrDPo/WGYEzzNs4WdHNyyEr/yXJ9pA==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+<link 
+  href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
+  rel="stylesheet"  type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <!-- style for code_number -->
+  <link rel="stylesheet" href="assest/css/intlTelInput.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="assest/css/style.css">
+
+<title>Strick</title>
+</head>
+<body>
+
+ <!-- MAIN MENU -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light ">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="assest/images/lg2.png" width="70px" height="70px"  alt="logo">STRICK
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav mx-auto">
+              <a class="strick-nav-lonk nav-link active" aria-current="page" href="#">Home</a>
+              <a class="strick-nav-lonk nav-link" href="#">About</a>
+              <a class="strick-nav-lonk nav-link" href="#">Services</a>
+              <a class="strick-nav-lonk nav-link" href="#">Contact</a>
+            </div>
+            <div class="social-buttons" >
+              <a href="#" class="social-button social-button--facebook" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+             
+              <a href="#" class="social-button social-button--instagram" aria-label="Snapchat">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="#" class="social-button social-button--linkedin" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+
+           
+          </div>
+         
+        </div>
+      </nav>
+
+<!-- HERO SECTION -->
+<div class="hero-section">
+      <div class="hero">
+     <div class="container">
+        <form action="#" method="get" class="search-form">
+
+         <div class="form-group" style="flex:100% ;">
+          <i class="fa-solid fa-location-dot"></i>
+            <input type="text" class="form-control"  placeholder="Type your Destintaion">
+        </div>
+        <div class="form-group">
+            <i class="fa fa-calendar"></i>
+            <input type="text" class="form-control" id="checkIn" placeholder="Check in">
+        </div>
+
+        <div class="form-group">
+            <i class="fa fa-calendar"></i>
+            <input type="text" class="form-control" id="checkOut" placeholder="Check out">
+        </div>
+
+         <div class="form-group" >
+            <i class="fa fa-bed"></i>
+            <select class="form-control" >
+                <option value="1">1 Room</option>
+                <option value="2">2 Room</option>
+                <option value="3">3 Room</option>
+                <option value="4">4 Room</option>
+                <option value="5">5 Room</option>
+            </select>
+        </div>
+
+        
+        <div class="form-group" >
+            <i class="fa fa-user"></i>
+            <select class="form-control" >
+                <option value="1">Adult</option>
+                <option value="2">1</option>
+                <option value="3">2</option>
+                <option value="4">3</option>
+                <option value="5">4</option>
+            </select>
+        </div>
+
+        <div class="form-group" >
+            <i class="fa fa-child"></i>
+            <select class="form-control" >
+                <option value="1">Child</option>
+                <option value="2">1</option>
+                <option value="3">2</option>
+                <option value="4">3</option>
+                <option value="5">4</option>
+            </select>
+        </div>
+
+         <div class="form-group"><i></i>
+           <button type="submit" class="btn btn-primary"><span>Check</span> </button>
+        </form>
+     </div>
+     </div>
+    
+</div>
+<!-- SUBSCRIBE -->
+<section class="subscribe-section pt-5 ">
+<div class="container text-center">
+    <h2 class="section-title animate__animated animate__fadeInUp">Do you have a question?</h2>
+    <p class="section-subtitle animate__animated animate__fadeInUp animate__delay-1s">We are here to help you</p>
+    <a href="" class="btn btn-white">subscribe to get our News</a>
+</div>
+</section>
+
+<!-- services -->
+<section class="services mb-5">
+<div class="container">
+  <div class="row ">
+    
+    <article class="article col-lg-4 text-center">
+      <i class="fa fa-compass article-icon fa-4x"></i>
+      <h3 class="article-title mt-5 ">Best Practices For TRAVEL</h3>
+      <p class="article-subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat enim molestiae eum soluta accusantium, nemo ex mollitia assumenda
+         sint doloribus iure maiores voluptas voluptatum nobis, optio temporibus, obcaecati ullam tempora.</p>
+      <a href="#" class="btn btn-primary read-btn mt-5 "><span>Continue Reading</span> </a>
+    </article>
+
+    <article class="article col-lg-4 text-center" style="scale: 1;box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;">
+      <i class="fa fa-earth-americas article-icon fa-4x"></i>
+      <h3 class="article-title mt-5">Winning Tactics For TRAVEL</h3>
+      <p class="article-subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat enim molestiae eum soluta accusantium, nemo ex mollitia assumenda
+         sint doloribus iure maiores voluptas voluptatum nobis, optio temporibus, obcaecati ullam tempora.</p>
+      <a href="#" class="btn btn-primary read-btn mt-5"an>Continue Reading</span> </a>
+    </article>
+
+    <article class="article col-lg-4 text-center ">
+      <i class="fa fa-route article-icon fa-4x"></i>
+      <h3 class="article-title mt-5">The Best Way To TRAVEL</h3>
+      <p class="article-subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat enim molestiae eum soluta accusantium, nemo ex mollitia assumenda
+         sint doloribus iure maiores voluptas voluptatum nobis, optio temporibus, obcaecati ullam tempora.</p>
+      <a href="#" class="btn btn-primary read-btn mt-5"pan>Continue Reading</span> </a>
+    </article>
+
+
+  </div>
+</div>
+  </section>
+
+  <!--Discover places-->
+  <section class="light-color">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+       <div class="strick-slider mt-5">
+        <article class="strick-slider-item">
+          <img src="https://picsum.photos/400/300" alt="">
+          <div class="strick-slider-item-container">
+            <h3>Fast-Track Your Discover</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis corrupti, dolorem doloribus et molestiae neque sint veritatis quod,
+               corporis excepturi praesentium unde, soluta nulla atque similique tempora </p>
+            <a href="" class="btn btn-primary">Read </a>
+          </div>
+        </article>
+        <article class="strick-slider-item">
+          <img src="https://picsum.photos/400/304" alt="">
+          <div class="strick-slider-item-container">
+            <h3>Things To do Discover</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus sunt, assumenda autem enim, nihil maxime quaerat aliquam magnam sequi nemo eius? Et,
+               nostrum repudiandae. Obcaecati, eaque. Error unde saepe sint.</p>
+            <a href="" class="btn btn-primary">Read </a>
+          </div>
+        </article>
+        <article class="strick-slider-item">
+          <img src="https://picsum.photos/400/303" alt="">
+          <div class="strick-slider-item-container">
+            <h3>Quick Way To Search</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim repellendus, voluptate, nisi ducimus quae aliquam, dolorum sequi molestias dolor unde 
+              atque ex ea iusto. Magni quis ducimus laborum neque dolore.</p>
+            <a href="" class="btn btn-primary">Read </a>
+          </div>
+        </article>
+        <article class="strick-slider-item">
+          <img src="https://picsum.photos/400/301" alt="">
+          <div class="strick-slider-item-container">
+            <h3>Don't Fall For This </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dolore autem nam quia temporibus odit molestiae officiis quae unde eius! Voluptatibus
+               eos ex dignissimos alias ipsa consectetur qui illum et!</p>
+            <a href="" class="btn btn-primary">Read </a>
+          </div>
+        </article>
+        <article class="strick-slider-item">
+          <img src="https://picsum.photos/400/302" alt="">
+          <div class="strick-slider-item-container">
+            <h3>write a content</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque quas praesentium laborum rerum officia quia neque consectetur cumque! Consectetur dicta mollitia fuga,
+               deserunt sed magni laboriosam esse quas assumenda illum?</p>
+            <a href="" class="btn btn-primary">Read </a>
+          </div>
+        </article>
+        <article class="strick-slider-item">
+          <img src="https://picsum.photos/400/300" alt="">
+          <div class="strick-slider-item-container">
+            <h3>What A Mistake!</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ipsum assumenda a, quae reprehenderit, recusandae officia, possimus labore dolor repudiandae iure tempora
+               adipisci ea suscipit eius repellat quisquam corrupti? Vel!</p>
+            <a href="" class="btn btn-primary">Read </a>
+          </div>
+        </article>
+       </div>
+      </div>
+
+      <div class="col-lg-4">
+      <div class="discover-places mt-5">
+        <h2>Discover places</h2>
+        <p>Places we Recomended</p>
+      </div>
+
+      <div class="body-places">
+      <a href="#">
+        <img src="https://picsum.photos/400/507" width="150px" height="100px" alt="place-image">
+          <h3>London</h3>
+        </img>
+      </a><a href="#">
+        <img src="https://picsum.photos/400/504" width="150px" height="100px" alt="place-image">
+          <h3>Turkey</h3>
+        </img>
+      </a><a href="#">
+        <img src="https://picsum.photos/400/506" width="150px" height="100px" alt="place-image">
+          <h3>Spain</h3>
+        </img>
+      </a><a href="#">
+        <img src="https://picsum.photos/400/505"  width="150px" height="100px"alt="place-image">
+          <h3>German</h3>
+        </img>
+      </a>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  </section>
+<!-- End section -->
+
+<section class="video-section">
+<div class="video-container">
+  <div class="video-overlay">
+   
+      <i class="fa-regular fa-circle-play vidoe-play"></i>
+      <i class="fa-sharp fa-solid fa-circle-pause video-pause hidden"></i>
+  </div>
+ 
+  <video class="strick-video">
+    <source src="assest/video/travel.mp4" type="video/mp4"> 
+    <source src="assest/video/travel.ogg" type="video-/ogg">
+    your browser doens't support vidoe
+  </video>
+</div>
+</section>
+
+<div class="Contact mt-5 mb-5">
+  <div class="container">
+    <h2>Get in touch</h2>
+    <div class="row">
+      <div class="col-lg-6">
+     
+        <form action="#" class="contact-form mb-5 ">
+          <div class="form-group "><input type="text" name="" id="" class="form-control" placeholder="Endter your Name"><i class="fa fa-user"></i></div>
+          <div class="form-group "><input type="text" name="" id="" class="form-control" placeholder="Enter your Email"><i class="fa fa-envelope"></i></div>
+          <div class="form-group "><input type="tel" name="" id="mobile_code" class="form-control" placeholder="phone-number"></div>
+          <button class="btn btn-primary ">Send</button>
+        </form>
+      </div>
+
+<div class="col-lg-6 text-center">
+ <h2>Follow us</h2>
+ <!-- <div class="socialMedia">
+  <i class="fa-brands fa-facebook"></i>
+  <i class="fa-brands fa-instagram"></i>
+  <i class="fa-brands fa-twitter"></i>
+  <i class="fa-brands fa-youtube"></i>
+ </div> -->
+
+ <div class="social-buttons">
+  <a href="#" class="social-button social-button--facebook" aria-label="Facebook">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+  <a href="#" class="social-button social-button--linkedin" aria-label="LinkedIn">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+  <a href="#" class="social-button social-button--snapchat" aria-label="Snapchat">
+    <i class="fab fa-snapchat-ghost"></i>
+  </a>
+  <a href="#" class="social-button social-button--github" aria-label="GitHub">
+    <i class="fab fa-github"></i>
+  </a>
+  <a href="#" class="social-button social-button--codepen" aria-label="CodePen">
+    <i class="fab fa-codepen"></i>
+  </a>
+</div>
+
+</div>
+
+    </div>
+  </div>
+</div>
+<!-- End Contact section -->
+<footer class="footer">
+  <p class="text-center">©2022 Powered by Strick</p> 
+</footer>
+
+<!-- JavaScript Bundle with Popper -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="assest/js/intlTelInput.js"></script>
+<script src="assest/js/script.js"></script>    
+</body>
+</html>
